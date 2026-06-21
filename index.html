@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A love letter written in code — for the one who makes my heart bloom.">
+  <title>For You, My Love 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@200;300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Falling Petals Canvas -->
+  <canvas id="petals-canvas"></canvas>
+
+  <!-- Floating Hearts Background -->
+  <div class="hearts-bg" id="hearts-bg"></div>
+
+  <!-- Sparkle Cursor Trail -->
+  <div id="sparkle-container"></div>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="heart-beat">💗</div>
+      <h1 class="hero-title">For You, My Love</h1>
+      <p class="hero-subtitle">Every beat of my heart writes your name</p>
+      <div class="scroll-indicator">
+        <span>scroll down</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOVE LETTER SECTION ============ -->
+  <section class="love-letter" id="love-letter">
+    <div class="section-bg-roses"></div>
+    <div class="container">
+      <div class="letter-envelope" id="envelope">
+        <div class="envelope-flap"></div>
+        <div class="letter-card" id="letter-card">
+          <div class="letter-seal">♥</div>
+          <h2 class="letter-greeting">My Dearest,</h2>
+          <p class="letter-text">
+            Every moment with you feels like a dream I never want to wake up from.
+            You are the reason I believe in magic because nothing else could explain
+            how someone as beautiful as you walked into my life.
+          </p>
+          <p class="letter-text">
+            Your smile lights up my entire world. Your laugh is my favorite song.
+            Your eyes hold galaxies I want to explore forever.
+            I fall deeper in love with you every single day.
+          </p>
+          <p class="letter-text">
+            I thank God for you every day.
+          </p>
+          <p class="letter-signature">Forever & Always Yours ♥</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TIMELINE / MEMORIES ============ -->
+  <section class="memories" id="memories">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-flower">🌺</span>
+        Our Story
+        <span class="title-flower">🌺</span>
+      </h2>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        <div class="timeline-item left">
+          <div class="timeline-dot">💕</div>
+          <div class="timeline-content">
+            <h3>The Day We Met</h3>
+            <p>My whole world changed in that one moment. I didn't know it yet but I had just met my forever.</p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-dot">💗</div>
+          <div class="timeline-content">
+            <h3>First Conversation</h3>
+            <p>I couldn't stop smiling and I knew there was something special about you.</p>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <div class="timeline-dot">💓</div>
+          <div class="timeline-content">
+            <h3>Falling In Love</h3>
+            <p>Slowly and undeniably, you became my everything.</p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-dot">💞</div>
+          <div class="timeline-content">
+            <h3>Right Now</h3>
+            <p>Every day I love you more than the day before. And tomorrow, I'll love you even more than today.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROMISE SECTION ============ -->
+  <section class="promise" id="promise">
+    <div class="promise-bg"></div>
+    <div class="container">
+      <div class="promise-card">
+        <div class="promise-roses">🌹</div>
+        <h2>My Promise To You</h2>
+        <p>
+          I promise to love you on your best days and hold you on your worst.
+          I promise to be your peace, your partner, your biggest fan.
+          I promise to choose you today, tomorrow and every day after that.
+        </p>
+        <p>
+          You are my once in a lifetime. My always. My forever.
+        </p>
+        <div class="promise-heart-container">
+          <div class="promise-heart">❤️</div>
+          <div class="promise-heart">❤️</div>
+          <div class="promise-heart">❤️</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-hearts">
+      <span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span>
+    </div>
+    <p class="footer-text">Made with all my love, just for you 💗</p>
+    <p class="footer-sub">You are my everything - always & forever</p>
+  </footer>
+
+  <!-- Background Music Toggle -->
+  <button class="music-toggle" id="music-toggle" aria-label="Toggle music">
+    <span class="music-icon">🎵</span>
+  </button>
+
+  <!-- Background Song -->
+  <audio id="bg-music" loop preload="auto">
+    <source src="Elvis Presley - Can't Help Falling In Love (Official Audio) - ElvisPresleyVEVO.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
