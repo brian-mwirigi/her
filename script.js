@@ -202,31 +202,31 @@
   });
 
   /* =========================================
-     MUSIC — ELVIS PRESLEY
+     INTRO OVERLAY + MUSIC — ELVIS PRESLEY
      ========================================= */
+  const introOverlay = document.getElementById('intro-overlay');
+  const introBtn = document.getElementById('intro-btn');
   const musicToggle = document.getElementById('music-toggle');
   const bgMusic = document.getElementById('bg-music');
   let isPlaying = false;
-  let hasAutoStarted = false;
 
-  if (bgMusic) {
-    bgMusic.volume = 0.5;
+  if (bgMusic) bgMusic.volume = 0.5;
 
-    function startMusic() {
-      if (hasAutoStarted) return;
-      hasAutoStarted = true;
-      bgMusic.play().then(() => {
-        isPlaying = true;
-        musicToggle.classList.add('playing');
-      }).catch(() => {}); // ignore if blocked
-    }
-
-    // Auto-start on first user interaction (browsers require it)
-    ['click', 'scroll', 'keydown', 'touchstart'].forEach(evt => {
-      document.addEventListener(evt, startMusic, { once: true });
+  // Intro button starts the music and fades away the overlay
+  if (introBtn && introOverlay) {
+    introBtn.addEventListener('click', () => {
+      introOverlay.classList.add('hidden');
+      if (bgMusic) {
+        bgMusic.play().then(() => {
+          isPlaying = true;
+          musicToggle.classList.add('playing');
+        }).catch(() => {});
+      }
     });
+  }
 
-    // Toggle button
+  // Toggle button to pause/resume
+  if (musicToggle && bgMusic) {
     musicToggle.addEventListener('click', (e) => {
       e.stopPropagation();
       if (isPlaying) {
